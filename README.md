@@ -11,4 +11,4 @@ Please go through the SunMailer/config.php file. Then fill up your email, id & p
 
 ## License
 
-This package is licensed under the [MIT License](https://github.com/IftekherSunny/contact-form/blob/master/README.md)
+This package is licensed under the [MIT License](https://github.com/IftekherSunny/contact-form/blob/master/LICENSE)
