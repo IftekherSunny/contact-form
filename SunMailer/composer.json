@@ -1,0 +1,25 @@
+{
+  "name": "sun/sunmailer",
+  "description": "SunMailer helps you to send email easily.",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Iftekher Sunny",
+          "email": "iftekhersunny@hotmail.com",
+          "homepage": "http://iftekhersunny.com",
+          "role": "Developer"
+      }
+  ],
+  "require": {
+      "php": ">=5.4.0",
+      "phpmailer/phpmailer": "5.2.9"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SunMailer\\": "src/"
+    }
+  }
+}
