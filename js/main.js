@@ -22,7 +22,7 @@
 				var self = this;
 				this.waiting = true;
 
-				Vue.http.post('/api/email.php', this.message).success(function (response) {
+				Vue.http.post('/contact-form/api/email.php', this.message).success(function (response) {
 					self.errors = '';
 					self.success = response;
 					self.waiting = false;

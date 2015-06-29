@@ -45,7 +45,7 @@ return [
         /**
          * Email View Path
          */
-        'view-directory' => ''
+        'view-directory' => 'contact-form/view/'
     ]
 
 ];

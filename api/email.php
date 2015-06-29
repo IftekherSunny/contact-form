@@ -4,7 +4,9 @@ require_once '../SunMailer/autoload.php';
 require_once '../inc/validation.php';
 require_once '../inc/requestchecker.php';
 
+use SunMailer\Helper;
 use SunMailer\Mailer;
+use SunMailer\View;
 
 if (!isAjax()) {
     Header('Location: /');
@@ -21,6 +23,14 @@ if ($errors) {
     echo json_encode($errors);return;
 }
 
-if (Mailer::send($message->email, $message->name, 'From Contact Form', $message->body)) {
+$config = require Helper::config() . '';
+
+$view = View::render('template', [
+    'email' => $message->email,
+    'name' => $message->name,
+    'message' => $message->body
+]);
+
+if (Mailer::send($config['mail']['username'], $config['mail']['username'], 'From Contact Form', $view)) {
     echo 'Your message has been send successfully.';
 }
