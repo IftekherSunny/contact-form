@@ -1,6 +1,6 @@
 ## Contact Form
 
-This contact form use SunMailer to send email. To know details about SunMailer visit this [Link](https://github.com/IftekherSunny/SunMailer)
+This contact form has been used SunMailer to send email. To know details about SunMailer visit this [Link](https://github.com/IftekherSunny/SunMailer)
 
 Please go through the SunMailer/config.php file. Then fill up your email, id & password and log set to false for sending email. Here log is set to true by default.
 
